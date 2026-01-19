@@ -5,16 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XIX Concurso Escolar BCRP 2026</title>
 
-
-    <!-- External Dependencies (Requires internet for CDN) -->
-	<script src="https://unpkg.com/lucide@0.435.0"></script>
-	<link rel="stylesheet" href="styles.css">
-	<script src="script.js" defer></script>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
-
-	
 </head>
 <body class="text-slate-900 antialiased">
 
@@ -24,7 +18,8 @@
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-3">
                     <div class="bg-blue-900 p-2 rounded-xl shadow-inner">
-                        <i data-lucide="landmark" class="text-white w-6 h-6"></i>
+                        <!-- ICON: Landmark -->
+                        <img src="images/icon-landmark-white.png" alt="BCRP" class="w-6 h-6" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=B'">
                     </div>
                     <span class="font-extrabold text-2xl tracking-tighter text-blue-950">BCRP<span class="text-blue-600">2026</span></span>
                 </div>
@@ -42,7 +37,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-blue-950  relative pt-40 pb-24 lg:pt-56 lg:pb-40 overflow-hidden bcrp-gradient text-white">
+    <section class="bg-blue-950 relative pt-40 pb-24 lg:pt-56 lg:pb-40 overflow-hidden bcrp-gradient text-white">
         <!-- Animated Background Orbs -->
         <div class="absolute top-0 right-0 -mr-40 -mt-40 w-[500px] h-[500px] bg-blue-500 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
         <div class="absolute bottom-0 left-0 -ml-40 -mb-40 w-[500px] h-[500px] bg-indigo-400 rounded-full mix-blend-screen filter blur-[100px] opacity-10"></div>
@@ -60,23 +55,26 @@
                 <p class="text-xl md:text-2xl text-blue-100/80 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
                     Demuestra tu creatividad y conocimiento sobre la estabilidad monetaria. Tienes 3 minutos para inspirar a todo el país.
                 </p>
-				<div class="flex flex-col sm:flex-row justify-center items-center gap-6">
-				    <a href="https://bcrpconcurso.com/" class="group w-full sm:w-auto px-10 py-5 bg-yellow-500 hover:bg-yellow-400 text-blue-950 font-black rounded-2xl transition-all transform hover:scale-105 shadow-2xl shadow-yellow-900/40 flex items-center justify-center space-x-3">
-				        <span>REGISTRAR MI EQUIPO</span>
-				        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
-				    </a>
-				</div>
-				
-				<div class="flex flex-wrap justify-center gap-4 mt-8">
-				    <a href="bases-completas.pdf" download class="flex items-center space-x-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-xl border border-white/10 transition-all group">
-				        <i data-lucide="file-text" class="w-5 h-5 text-yellow-400"></i>
-				        <span class="text-sm font-bold uppercase tracking-wider">Bases del Concurso (PDF)</span>
-				    </a>
-				    <a href="afiche-oficial.pdf" download class="flex items-center space-x-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-xl border border-white/10 transition-all group">
-				        <i data-lucide="image" class="w-5 h-5 text-blue-400"></i>
-				        <span class="text-sm font-bold uppercase tracking-wider">Descargar Afiches</span>
-				    </a>
-				</div>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="https://bcrpconcurso.com/" class="group w-full sm:w-auto px-10 py-5 bg-yellow-500 hover:bg-yellow-400 text-blue-950 font-black rounded-2xl transition-all transform hover:scale-105 shadow-2xl shadow-yellow-900/40 flex items-center justify-center space-x-3">
+                        <span>REGISTRAR MI EQUIPO</span>
+                        <!-- ICON: Arrow Right -->
+                        <img src="images/icon-arrow-right.png" alt="" class="w-5 h-5 group-hover:translate-x-1 transition-transform" onerror="this.style.display='none'">
+                    </a>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <a href="bases-completas.pdf" download class="flex items-center space-x-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-xl border border-white/10 transition-all group">
+                        <!-- ICON: File Text -->
+                        <img src="images/icon-pdf.png" alt="" class="w-5 h-5" onerror="this.src='https://placehold.co/40x40/eab308/white?text=P'">
+                        <span class="text-sm font-bold uppercase tracking-wider">Bases del Concurso (PDF)</span>
+                    </a>
+                    <a href="afiche-oficial.pdf" download class="flex items-center space-x-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-xl border border-white/10 transition-all group">
+                        <!-- ICON: Image -->
+                        <img src="images/icon-image.png" alt="" class="w-5 h-5" onerror="this.src='https://placehold.co/40x40/3b82f6/white?text=I'">
+                        <span class="text-sm font-bold uppercase tracking-wider">Descargar Afiches</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -85,21 +83,30 @@
     <div class="max-w-6xl mx-auto px-4 -mt-16 relative z-20">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="glass p-8 rounded-[2rem] flex items-center space-x-5 shadow-2xl border border-white/40">
-                <div class="bg-blue-600/10 p-4 rounded-2xl"><i data-lucide="graduation-cap" class="text-blue-600 w-8 h-8"></i></div>
+                <div class="bg-blue-600/10 p-4 rounded-2xl">
+                    <!-- ICON: Graduation Cap -->
+                    <img src="images/icon-edu.png" alt="" class="w-8 h-8" onerror="this.src='https://placehold.co/64x64/2563eb/white?text=E'">
+                </div>
                 <div>
                     <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Público Objetivo</p>
                     <p class="font-bold text-xl text-blue-950">4° y 5° Secundaria</p>
                 </div>
             </div>
             <div class="glass p-8 rounded-[2rem] flex items-center space-x-5 shadow-2xl border border-white/40">
-                <div class="bg-yellow-600/10 p-4 rounded-2xl"><i data-lucide="banknote" class="text-yellow-600 w-8 h-8"></i></div>
+                <div class="bg-yellow-600/10 p-4 rounded-2xl">
+                    <!-- ICON: Banknote -->
+                    <img src="images/icon-money.png" alt="" class="w-8 h-8" onerror="this.src='https://placehold.co/64x64/ca8a04/white?text=S'">
+                </div>
                 <div>
                     <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Bolsa de Premios</p>
                     <p class="font-bold text-xl text-blue-950">S/ 3,000 p.p.</p>
                 </div>
             </div>
             <div class="glass p-8 rounded-[2rem] flex items-center space-x-5 shadow-2xl border border-white/40">
-                <div class="bg-emerald-600/10 p-4 rounded-2xl"><i data-lucide="clock-4" class="text-emerald-600 w-8 h-8"></i></div>
+                <div class="bg-emerald-600/10 p-4 rounded-2xl">
+                    <!-- ICON: Clock -->
+                    <img src="images/icon-time.png" alt="" class="w-8 h-8" onerror="this.src='https://placehold.co/64x64/059669/white?text=T'">
+                </div>
                 <div>
                     <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Fecha Límite</p>
                     <p class="font-bold text-xl text-blue-950">14 Ago, 2026</p>
@@ -119,37 +126,43 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-    <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover relative group">
-        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8">
-            <i data-lucide="shield-check" class="text-blue-600 w-8 h-8"></i>
-        </div>
-        <h3 class="text-2xl font-black text-blue-950 mb-4 leading-tight">Estabilidad Macroeconómica</h3>
-        <p class="text-slate-600 leading-relaxed font-medium">
-            Importancia de las reservas internacionales para la estabilidad macroeconómica del país.
-        </p>
-    </div>
+            <!-- Theme 1 -->
+            <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover relative group">
+                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8">
+                    <!-- ICON: Shield Check -->
+                    <img src="images/icon-shield.png" alt="" class="w-8 h-8" onerror="this.src='https://placehold.co/64x64/2563eb/white?text=1'">
+                </div>
+                <h3 class="text-2xl font-black text-blue-950 mb-4 leading-tight">Estabilidad Macroeconómica</h3>
+                <p class="text-slate-600 leading-relaxed font-medium">
+                    Importancia de las reservas internacionales para la estabilidad macroeconómica del país.
+                </p>
+            </div>
 
-    <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover relative group">
-        <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center mb-8">
-            <i data-lucide="smartphone" class="text-indigo-600 w-8 h-8"></i>
-        </div>
-        <h3 class="text-2xl font-black text-blue-950 mb-4 leading-tight">Pagos Digitales</h3>
-        <p class="text-slate-600 leading-relaxed font-medium">
-            Uso de pagos digitales en mi localidad y su impacto en la economía diaria.
-        </p>
-    </div>
+            <!-- Theme 2 -->
+            <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover relative group">
+                <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center mb-8">
+                    <!-- ICON: Smartphone -->
+                    <img src="images/icon-phone.png" alt="" class="w-8 h-8" onerror="this.src='https://placehold.co/64x64/4f46e5/white?text=2'">
+                </div>
+                <h3 class="text-2xl font-black text-blue-950 mb-4 leading-tight">Pagos Digitales</h3>
+                <p class="text-slate-600 leading-relaxed font-medium">
+                    Uso de pagos digitales en mi localidad y su impacto en la economía diaria.
+                </p>
+            </div>
 
-    <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover relative group">
-        <div class="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center mb-8">
-            <i data-lucide="target" class="text-emerald-600 w-8 h-8"></i>
+            <!-- Theme 3 -->
+            <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover relative group">
+                <div class="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center mb-8">
+                    <!-- ICON: Target -->
+                    <img src="images/icon-target.png" alt="" class="w-8 h-8" onerror="this.src='https://placehold.co/64x64/059669/white?text=3'">
+                </div>
+                <h3 class="text-2xl font-black text-blue-950 mb-4 leading-tight">Metas de Inflación</h3>
+                <p class="text-slate-600 leading-relaxed font-medium">
+                    El esquema de metas explícitas de inflación de la política monetaria del BCRP.
+                </p>
+            </div>
         </div>
-        <h3 class="text-2xl font-black text-blue-950 mb-4 leading-tight">Metas de Inflación</h3>
-        <p class="text-slate-600 leading-relaxed font-medium">
-            El esquema de metas explícitas de inflación de la política monetaria del BCRP.
-        </p>
-    </div>
-</div>
-	</section>
+    </section>
 
     <!-- Prizes Section -->
     <section id="premios" class="py-32 bg-slate-100/50">
@@ -167,7 +180,8 @@
                     <h3 class="text-4xl font-black text-blue-950 mb-2">S/ 2,000</h3>
                     <p class="text-slate-500 font-bold text-sm mb-8">Por cada integrante (3) y docente</p>
                     <div class="w-full pt-8 border-t border-slate-100 text-blue-900 flex flex-col items-center">
-                        <i data-lucide="laptop" class="w-6 h-6 mb-2"></i>
+                        <!-- ICON: Laptop -->
+                        <img src="images/icon-laptop-blue.png" alt="" class="w-6 h-6 mb-2" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=L'">
                         <span class="text-xs font-black uppercase tracking-wider leading-relaxed">Laptop + Proyector<br>para el Colegio</span>
                     </div>
                 </div>
@@ -180,7 +194,8 @@
                     <h3 class="text-5xl font-black text-white mb-2">S/ 3,000</h3>
                     <p class="text-blue-300 font-bold text-sm mb-10">Por cada integrante (3) y docente</p>
                     <div class="w-full pt-10 border-t border-blue-900 text-yellow-500 flex flex-col items-center">
-                        <i data-lucide="laptop" class="w-8 h-8 mb-3"></i>
+                        <!-- ICON: Laptop Premium -->
+                        <img src="images/icon-laptop-gold.png" alt="" class="w-8 h-8 mb-3" onerror="this.src='https://placehold.co/48x48/eab308/1e3a8a?text=L'">
                         <span class="text-xs font-black uppercase tracking-wider leading-relaxed">Infraestructura Tecnológica<br>Premium para el Colegio</span>
                     </div>
                 </div>
@@ -192,7 +207,8 @@
                     <h3 class="text-4xl font-black text-blue-950 mb-2">S/ 1,500</h3>
                     <p class="text-slate-500 font-bold text-sm mb-8">Por cada integrante (3) y docente</p>
                     <div class="w-full pt-8 border-t border-slate-100 text-blue-900 flex flex-col items-center">
-                        <i data-lucide="laptop" class="w-6 h-6 mb-2"></i>
+                        <!-- ICON: Laptop -->
+                        <img src="images/icon-laptop-blue.png" alt="" class="w-6 h-6 mb-2" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=L'">
                         <span class="text-xs font-black uppercase tracking-wider leading-relaxed">Laptop + Proyector<br>para el Colegio</span>
                     </div>
                 </div>
@@ -232,24 +248,29 @@
             <div class="lg:w-1/2">
                 <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[3rem] p-12 border-2 border-white shadow-xl">
                     <h4 class="font-black text-blue-900 text-2xl mb-8 flex items-center">
-                        <i data-lucide="terminal" class="mr-3 w-8 h-8"></i>
+                        <!-- ICON: Terminal/Checklist -->
+                        <img src="images/icon-checklist.png" alt="" class="mr-3 w-8 h-8" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=C'">
                         Checklist Técnico
                     </h4>
                     <div class="space-y-6">
                         <div class="flex items-center p-5 bg-white rounded-2xl border border-blue-100 shadow-sm">
-                            <i data-lucide="video" class="w-6 h-6 text-blue-600 mr-4"></i>
+                            <!-- ICON: Video -->
+                            <img src="images/icon-video.png" alt="" class="w-6 h-6 mr-4" onerror="this.src='https://placehold.co/48x48/2563eb/white?text=V'">
                             <span class="font-bold text-slate-700 uppercase tracking-wide text-xs">Formato: MP4 / Max 3 Minutos</span>
                         </div>
                         <div class="flex items-center p-5 bg-white rounded-2xl border border-blue-100 shadow-sm">
-                            <i data-lucide="hard-drive" class="w-6 h-6 text-blue-600 mr-4"></i>
+                            <!-- ICON: Hard Drive -->
+                            <img src="images/icon-disk.png" alt="" class="w-6 h-6 mr-4" onerror="this.src='https://placehold.co/48x48/2563eb/white?text=D'">
                             <span class="font-bold text-slate-700 uppercase tracking-wide text-xs">Tamaño máximo de archivo: 80 MB</span>
                         </div>
                         <div class="flex items-center p-5 bg-white rounded-2xl border border-blue-100 shadow-sm">
-                            <i data-lucide="shield-alert" class="w-6 h-6 text-red-500 mr-4"></i>
-                            <span class="font-bold text-slate-700 uppercase tracking-wide text-xs">Prohibido mencionar nombre del colegio</span>
+                            <!-- ICON: Shield Alert -->
+                            <img src="images/icon-alert.png" alt="" class="w-6 h-6 mr-4" onerror="this.src='https://placehold.co/48x48/ef4444/white?text=!'">
+                            <span class="font-bold text-slate-700 uppercase tracking-wide text-xs text-red-600">Prohibido mencionar nombre del colegio</span>
                         </div>
                         <div class="flex items-center p-5 bg-white rounded-2xl border border-blue-100 shadow-sm">
-                            <i data-lucide="check-square" class="w-6 h-6 text-green-500 mr-4"></i>
+                            <!-- ICON: Check Square -->
+                            <img src="images/icon-verify.png" alt="" class="w-6 h-6 mr-4" onerror="this.src='https://placehold.co/48x48/10b981/white?text=OK'">
                             <span class="font-bold text-slate-700 uppercase tracking-wide text-xs">Indicar fuentes de información al final</span>
                         </div>
                     </div>
@@ -265,28 +286,28 @@
             <h2 class="text-4xl md:text-5xl font-black text-center mb-24 tracking-tight">Timeline 2026</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Step -->
+                <!-- Step 1 -->
                 <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:bg-white/20 transition-all group">
                     <span class="block text-yellow-400 font-black text-xs uppercase tracking-[0.3em] mb-4">Etapa 1</span>
                     <h4 class="text-2xl font-black mb-4">Inscripciones</h4>
                     <p class="text-blue-100/70 font-bold text-sm leading-relaxed mb-8">Del 1 de Abril al 14 de Agosto del 2026.</p>
                     <div class="w-12 h-1 bg-white/20 rounded-full group-hover:w-full transition-all duration-500"></div>
                 </div>
-                <!-- Step -->
+                <!-- Step 2 -->
                 <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:bg-white/20 transition-all group">
                     <span class="block text-yellow-400 font-black text-xs uppercase tracking-[0.3em] mb-4">Etapa 2</span>
                     <h4 class="text-2xl font-black mb-4">Semifinalistas</h4>
                     <p class="text-blue-100/70 font-bold text-sm leading-relaxed mb-8">Publicación de resultados el 24 de Septiembre.</p>
                     <div class="w-12 h-1 bg-white/20 rounded-full group-hover:w-full transition-all duration-500"></div>
                 </div>
-                <!-- Step -->
+                <!-- Step 3 -->
                 <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:bg-white/20 transition-all group">
                     <span class="block text-yellow-400 font-black text-xs uppercase tracking-[0.3em] mb-4">Etapa 3</span>
                     <h4 class="text-2xl font-black mb-4">Finalistas</h4>
                     <p class="text-blue-100/70 font-bold text-sm leading-relaxed mb-8">Anuncio de los 3 mejores el 22 de Octubre.</p>
                     <div class="w-12 h-1 bg-white/20 rounded-full group-hover:w-full transition-all duration-500"></div>
                 </div>
-                <!-- Step -->
+                <!-- Step 4 -->
                 <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:bg-white/20 transition-all group">
                     <span class="block text-yellow-400 font-black text-xs uppercase tracking-[0.3em] mb-4">Etapa 4</span>
                     <h4 class="text-2xl font-black mb-4">Gala Final</h4>
@@ -297,48 +318,49 @@
         </div>
     </section>
 
-	<!--FAQ-->
-	<section id="faq" class="py-32 bg-white">
-	    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-	        <div class="text-center mb-16">
-	            <h2 class="text-4xl font-black text-blue-950 mb-4 tracking-tight">Preguntas Frecuentes</h2>
-	            <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
-	        </div>
-	
-	        <div class="space-y-4">
-	            <div class="border border-slate-200 rounded-2xl overflow-hidden">
-	                <button class="w-full p-6 text-left flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
-	                    <span class="font-bold text-blue-950">¿Quiénes pueden participar en el concurso?</span>
-	                    <i data-lucide="chevron-down" class="w-5 h-5 text-blue-600 transition-transform"></i>
-	                </button>
-	                <div class="hidden p-6 text-slate-600 border-t border-slate-100 bg-white">
-	                    Pueden participar estudiantes de 4to y 5to de secundaria de instituciones educativas públicas y privadas a nivel nacional, formando equipos de 3 integrantes liderados por un docente asesor.
-	                </div>
-	            </div>
-	
-	            <div class="border border-slate-200 rounded-2xl overflow-hidden">
-	                <button class="w-full p-6 text-left flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
-	                    <span class="font-bold text-blue-950">¿Puedo mencionar el nombre de mi colegio en el video?</span>
-	                    <i data-lucide="chevron-down" class="w-5 h-5 text-blue-600 transition-transform"></i>
-	                </button>
-	                <div class="hidden p-6 text-slate-600 border-t border-slate-100 bg-white">
-	                    No. Para garantizar la imparcialidad del jurado, está estrictamente prohibido mencionar el nombre del colegio, mostrar el uniforme o insignias dentro del video. El incumplimiento es causal de descalificación.
-	                </div>
-	            </div>
-	
-	            <div class="border border-slate-200 rounded-2xl overflow-hidden">
-	                <button class="w-full p-6 text-left flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
-	                    <span class="font-bold text-blue-950">¿Cuál es la duración máxima del video?</span>
-	                    <i data-lucide="chevron-down" class="w-5 h-5 text-blue-600 transition-transform"></i>
-	                </button>
-	                <div class="hidden p-6 text-slate-600 border-t border-slate-100 bg-white">
-	                    El video debe tener una duración máxima de 3 minutos. Se recomienda que el contenido sea dinámico y creativo para captar la atención del espectador.
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-	
+    <!-- FAQ -->
+    <section id="faq" class="py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-blue-950 mb-4 tracking-tight">Preguntas Frecuentes</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+    
+            <div class="space-y-4">
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-bold text-blue-950">¿Quiénes pueden participar en el concurso?</span>
+                        <!-- ICON: Chevron Down -->
+                        <img src="images/icon-chevron.png" alt="" class="w-5 h-5 transition-transform" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=V'">
+                    </button>
+                    <div class="hidden p-6 text-slate-600 border-t border-slate-100 bg-white">
+                        Pueden participar estudiantes de 4to y 5to de secundaria de instituciones educativas públicas y privadas a nivel nacional, formando equipos de 3 integrantes liderados por un docente asesor.
+                    </div>
+                </div>
+    
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-bold text-blue-950">¿Puedo mencionar el nombre de mi colegio en el video?</span>
+                        <img src="images/icon-chevron.png" alt="" class="w-5 h-5 transition-transform" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=V'">
+                    </button>
+                    <div class="hidden p-6 text-slate-600 border-t border-slate-100 bg-white">
+                        No. Para garantizar la imparcialidad del jurado, está estrictamente prohibido mencionar el nombre del colegio, mostrar el uniforme o insignias dentro del video. El incumplimiento es causal de descalificación.
+                    </div>
+                </div>
+    
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-bold text-blue-950">¿Cuál es la duración máxima del video?</span>
+                        <img src="images/icon-chevron.png" alt="" class="w-5 h-5 transition-transform" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=V'">
+                    </button>
+                    <div class="hidden p-6 text-slate-600 border-t border-slate-100 bg-white">
+                        El video debe tener una duración máxima de 3 minutos. Se recomienda que el contenido sea dinámico y creativo para captar la atención del espectador.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Footer -->
     <footer class="bg-white pt-32 pb-16 border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -346,7 +368,7 @@
                 <div class="space-y-8">
                     <div class="flex items-center space-x-3">
                         <div class="bg-blue-900 p-2 rounded-xl">
-                            <i data-lucide="landmark" class="text-white w-6 h-6"></i>
+                            <img src="images/icon-landmark-white.png" alt="BCRP" class="w-6 h-6" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=B'">
                         </div>
                         <span class="font-black text-2xl tracking-tighter text-blue-950">BCRP<span class="text-blue-600">2026</span></span>
                     </div>
@@ -354,24 +376,31 @@
                         Construyendo cultura económica y financiera desde las aulas.
                     </p>
                     <div class="flex space-x-5">
-                        <a href="#" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-blue-400 hover:text-white transition-all"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-red-600 hover:text-white transition-all"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                        <!-- Social Icons -->
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center hover:bg-blue-600 transition-all group">
+                            <img src="images/icon-fb.png" alt="" class="w-5 h-5 opacity-40 group-hover:invert group-hover:opacity-100" onerror="this.src='https://placehold.co/32x32/1e3a8a/white?text=f'">
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center hover:bg-blue-400 transition-all group">
+                            <img src="images/icon-tw.png" alt="" class="w-5 h-5 opacity-40 group-hover:invert group-hover:opacity-100" onerror="this.src='https://placehold.co/32x32/3b82f6/white?text=t'">
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center hover:bg-red-600 transition-all group">
+                            <img src="images/icon-yt.png" alt="" class="w-5 h-5 opacity-40 group-hover:invert group-hover:opacity-100" onerror="this.src='https://placehold.co/32x32/ef4444/white?text=y'">
+                        </a>
                     </div>
                 </div>
                 <div>
                     <h5 class="text-blue-950 font-black uppercase text-[10px] tracking-[0.3em] mb-10">Contáctanos</h5>
                     <div class="space-y-6">
                         <a href="mailto:concurso.escolar@bcrp.gob.pe" class="flex items-center space-x-4 text-slate-600 hover:text-blue-600 transition-colors">
-                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            <img src="images/icon-mail.png" alt="" class="w-5 h-5" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=@'">
                             <span class="font-bold text-sm">concurso.escolar@bcrp.gob.pe</span>
                         </a>
                         <a href="https://wa.me/51972906965" class="flex items-center space-x-4 text-slate-600 hover:text-emerald-600 transition-colors">
-                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            <img src="images/icon-wa.png" alt="" class="w-5 h-5" onerror="this.src='https://placehold.co/32x32/10b981/white?text=W'">
                             <span class="font-bold text-sm">WhatsApp: +51 972 906 965</span>
                         </a>
                         <div class="flex items-center space-x-4 text-slate-600">
-                            <i data-lucide="phone" class="w-5 h-5"></i>
+                            <img src="images/icon-phone.png" alt="" class="w-5 h-5" onerror="this.src='https://placehold.co/32x32/64748b/white?text=P'">
                             <span class="font-bold text-sm">+51 (1) 613-2000</span>
                         </div>
                     </div>
@@ -379,7 +408,7 @@
                 <div>
                     <h5 class="text-blue-950 font-black uppercase text-[10px] tracking-[0.3em] mb-10">Oficina Central</h5>
                     <div class="flex items-start space-x-4 text-slate-600">
-                        <i data-lucide="map-pin" class="w-5 h-5 mt-1"></i>
+                        <img src="images/icon-map.png" alt="" class="w-5 h-5 mt-1" onerror="this.src='https://placehold.co/32x32/64748b/white?text=M'">
                         <span class="font-bold text-sm leading-relaxed">
                             Jr. Santa Rosa 441-445,<br>
                             Cercado de Lima, Perú
@@ -397,9 +426,6 @@
             </div>
         </div>
     </footer>
+
 </body>
-
 </html>
-
-
-
