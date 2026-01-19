@@ -1,13 +1,22 @@
- <script>
-        // Initialize Lucide icons
-        window.onload = function() {
-            lucide.createIcons();
-            
-            // Intersection Observer for scroll animations
-            const observerOptions = {
-                threshold: 0.1
-            };
+        // Función principal de inicialización
+        function initApp() {
+            // Inicializar Lucide con manejo de errores
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
 
+            // FAQ Logic
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const btn = item.querySelector('button');
+                btn.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    faqItems.forEach(other => other.classList.remove('active'));
+                    if (!isActive) item.classList.add('active');
+                });
+            });
+
+            // Animaciones de Scroll
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -15,16 +24,22 @@
                         entry.target.classList.remove('translate-y-10');
                     }
                 });
-            }, observerOptions);
+            }, { threshold: 0.1 });
 
-            // Add basic entry animations to cards
             document.querySelectorAll('.card-hover').forEach(card => {
                 card.classList.add('transition-all', 'duration-700', 'translate-y-10', 'opacity-0');
                 observer.observe(card);
             });
-        };
+        }
 
-        // Smooth scroll implementation
+        // Ejecutar cuando el DOM esté listo (más seguro para Netlify)
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initApp);
+        } else {
+            initApp();
+        }
+
+        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -37,20 +52,3 @@
                 }
             });
         });
-
-// Función para expandir/colapsar preguntas frecuentes
-function toggleFaq(button) {
-    const content = button.nextElementSibling;
-    const icon = button.querySelector('i');
-    
-    // Toggle visibilidad
-    content.classList.toggle('hidden');
-    
-    // Rotar icono
-    if (content.classList.contains('hidden')) {
-        icon.style.transform = 'rotate(0deg)';
-    } else {
-        icon.style.transform = 'rotate(180deg)';
-    }
-}
-    </script>
