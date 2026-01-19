@@ -42,11 +42,6 @@ function toggleFaq(button) {
     // Toggle visibilidad
     content.classList.toggle('hidden');
     
-    // Rotar icono
-    if (content.classList.contains('hidden')) {
-        icon.style.transform = 'rotate(0deg)';
-    } else {
-        icon.style.transform = 'rotate(180deg)';
-    }
 }
     </script>
+
