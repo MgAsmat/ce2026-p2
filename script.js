@@ -1,23 +1,25 @@
-// Función principal de inicialización
+// Principal initialization function
 function initApp() {
-    // Inicializar Lucide con manejo de errores
+    // Initialize Lucide icons
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
+    } else {
+        console.error("Lucide library not loaded");
     }
 
     // FAQ Logic
-    // Expose toggleFaq globally so inline onclick="toggleFaq(this)" works
     window.toggleFaq = function (btn) {
         const container = btn.closest('.border') || btn.parentElement;
         if (!container) return;
-        // assume the answer panel is the next div sibling inside the container
-        const content = container.querySelector('div.hidden') || Array.from(container.children).find(c => c.tagName === 'DIV' && c !== btn);
+        
+        // Find the hidden content div and the icon
+        const content = container.querySelector('div.hidden') || container.querySelector('div:not(button)');
         const icon = btn.querySelector('i');
 
-        // Close other FAQ items
+        // Close other FAQ items for accordion effect
         document.querySelectorAll('#faq .border').forEach(other => {
             if (other === container) return;
-            const oContent = other.querySelector('div.hidden, div:not(button)');
+            const oContent = other.querySelector('div:not(button)');
             if (oContent && !oContent.classList.contains('hidden')) {
                 oContent.classList.add('hidden');
                 const oIcon = other.querySelector('button i');
@@ -36,16 +38,7 @@ function initApp() {
         }
     };
 
-    // Also attach event listeners to FAQ buttons (in case you remove inline onclick later)
-    document.querySelectorAll('#faq button').forEach(btn => {
-        btn.addEventListener('click', function (e) {
-            // prevent double-handling if inline onclick already triggered
-            // but calling toggleFaq directly is safe
-            window.toggleFaq(this);
-        });
-    });
-
-    // Animaciones de Scroll
+    // Scroll Animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -61,7 +54,7 @@ function initApp() {
     });
 }
 
-// Ejecutar cuando el DOM esté listo (más seguro para Netlify)
+// Execute when DOM is ready
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initApp);
 } else {
