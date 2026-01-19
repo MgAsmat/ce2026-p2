@@ -37,4 +37,20 @@
                 }
             });
         });
+
+// Función para expandir/colapsar preguntas frecuentes
+function toggleFaq(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('i');
+    
+    // Toggle visibilidad
+    content.classList.toggle('hidden');
+    
+    // Rotar icono
+    if (content.classList.contains('hidden')) {
+        icon.style.transform = 'rotate(0deg)';
+    } else {
+        icon.style.transform = 'rotate(180deg)';
+    }
+}
     </script>
