@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XIX Concurso Escolar BCRP 2026</title>
+
+
+    <!-- External Dependencies (Requires internet for CDN) -->
+	<script src="https://unpkg.com/lucide@0.435.0"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+
+
+	
 </head>
 <body class="text-slate-900 antialiased">
 
+    <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass border-b border-slate-200/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-3">
-                    <div class="bg-blue-900 p-2 rounded-xl shadow-inner text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"></line><line x1="6" y1="18" x2="6" y2="11"></line><line x1="10" y1="18" x2="10" y2="11"></line><line x1="14" y1="18" x2="14" y2="11"></line><line x1="18" y1="18" x2="18" y2="11"></line><polygon points="12 2 20 7 4 7 12 2"></polygon></svg>
+                    <div class="bg-blue-900 p-2 rounded-xl shadow-inner">
+                        <i data-lucide="landmark" class="text-white w-6 h-6"></i>
                     </div>
                     <span class="font-extrabold text-2xl tracking-tighter text-blue-950">BCRP<span class="text-blue-600">2026</span></span>
                 </div>
@@ -33,62 +41,365 @@
         </div>
     </nav>
 
-    <section class="bg-blue-950 relative pt-40 pb-24 lg:pt-56 lg:pb-40 overflow-hidden bcrp-gradient text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div class="inline-flex items-center space-x-2 py-1.5 px-4 rounded-full bg-blue-500/10 text-blue-300 text-xs font-bold uppercase tracking-[0.2em] mb-8 border border-blue-500/20 backdrop-blur-sm">
-                <span class="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span>
-                <span>XIX Concurso Escolar de Videos 2026</span>
-            </div>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] mb-8 tracking-tight">
-                Crea impacto, <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-indigo-200 to-blue-100">mueve la economía.</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-blue-100/80 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
-                Demuestra tu creatividad y conocimiento sobre la estabilidad monetaria. Tienes 3 minutos para inspirar a todo el país.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
-                <a href="https://bcrpconcurso.com/" class="group w-full sm:w-auto px-10 py-5 bg-yellow-500 hover:bg-yellow-400 text-blue-950 font-black rounded-2xl transition-all transform hover:scale-105 shadow-2xl shadow-yellow-900/40 flex items-center justify-center space-x-3">
-                    <span>REGISTRAR MI EQUIPO</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </a>
+    <!-- Hero Section -->
+    <section class="bg-blue-950  relative pt-40 pb-24 lg:pt-56 lg:pb-40 overflow-hidden bcrp-gradient text-white">
+        <!-- Animated Background Orbs -->
+        <div class="absolute top-0 right-0 -mr-40 -mt-40 w-[500px] h-[500px] bg-blue-500 rounded-full mix-blend-screen filter blur-[100px] opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-0 left-0 -ml-40 -mb-40 w-[500px] h-[500px] bg-indigo-400 rounded-full mix-blend-screen filter blur-[100px] opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <div class="inline-flex items-center space-x-2 py-1.5 px-4 rounded-full bg-blue-500/10 text-blue-300 text-xs font-bold uppercase tracking-[0.2em] mb-8 border border-blue-500/20 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span>
+                    <span>XIX Concurso Escolar de Videos 2026</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] mb-8 tracking-tight">
+                    Crea impacto, <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-indigo-200 to-blue-100">mueve la economía.</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100/80 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
+                    Demuestra tu creatividad y conocimiento sobre la estabilidad monetaria. Tienes 3 minutos para inspirar a todo el país.
+                </p>
+				<div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+				    <a href="https://bcrpconcurso.com/" class="group w-full sm:w-auto px-10 py-5 bg-yellow-500 hover:bg-yellow-400 text-blue-950 font-black rounded-2xl transition-all transform hover:scale-105 shadow-2xl shadow-yellow-900/40 flex items-center justify-center space-x-3">
+				        <span>REGISTRAR MI EQUIPO</span>
+				        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+				    </a>
+				</div>
+				
+				<div class="flex flex-wrap justify-center gap-4 mt-8">
+				    <a href="bases-completas.pdf" download class="flex items-center space-x-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-xl border border-white/10 transition-all group">
+				        <i data-lucide="file-text" class="w-5 h-5 text-yellow-400"></i>
+				        <span class="text-sm font-bold uppercase tracking-wider">Bases del Concurso (PDF)</span>
+				    </a>
+				    <a href="afiche-oficial.pdf" download class="flex items-center space-x-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-xl border border-white/10 transition-all group">
+				        <i data-lucide="image" class="w-5 h-5 text-blue-400"></i>
+				        <span class="text-sm font-bold uppercase tracking-wider">Descargar Afiches</span>
+				    </a>
+				</div>
             </div>
         </div>
     </section>
 
+    <!-- Quick Stats Container -->
     <div class="max-w-6xl mx-auto px-4 -mt-16 relative z-20">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="glass p-8 rounded-[2rem] flex items-center space-x-5 shadow-2xl border border-white/40">
-                <div class="bg-blue-600/10 p-4 rounded-2xl text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
-                </div>
+                <div class="bg-blue-600/10 p-4 rounded-2xl"><i data-lucide="graduation-cap" class="text-blue-600 w-8 h-8"></i></div>
                 <div>
                     <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Público Objetivo</p>
                     <p class="font-bold text-xl text-blue-950">4° y 5° Secundaria</p>
                 </div>
             </div>
+            <div class="glass p-8 rounded-[2rem] flex items-center space-x-5 shadow-2xl border border-white/40">
+                <div class="bg-yellow-600/10 p-4 rounded-2xl"><i data-lucide="banknote" class="text-yellow-600 w-8 h-8"></i></div>
+                <div>
+                    <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Bolsa de Premios</p>
+                    <p class="font-bold text-xl text-blue-950">S/ 3,000 p.p.</p>
+                </div>
             </div>
+            <div class="glass p-8 rounded-[2rem] flex items-center space-x-5 shadow-2xl border border-white/40">
+                <div class="bg-emerald-600/10 p-4 rounded-2xl"><i data-lucide="clock-4" class="text-emerald-600 w-8 h-8"></i></div>
+                <div>
+                    <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Fecha Límite</p>
+                    <p class="font-bold text-xl text-blue-950">14 Ago, 2026</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <section id="faq" class="py-32 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-blue-950 mb-4 tracking-tight">Preguntas Frecuentes</h2>
-                <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+    <!-- Themes Section -->
+    <section id="temas" class="py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl font-black text-blue-950 mb-6 tracking-tight">Ejes de Investigación</h2>
+            <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+            <p class="text-slate-500 mt-8 max-w-2xl mx-auto text-lg font-medium">
+                Tu video debe abordar con claridad y dinamismo alguno de los siguientes temas fundamentales para el desarrollo del Perú.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover relative group">
+        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8">
+            <i data-lucide="shield-check" class="text-blue-600 w-8 h-8"></i>
+        </div>
+        <h3 class="text-2xl font-black text-blue-950 mb-4 leading-tight">Estabilidad Macroeconómica</h3>
+        <p class="text-slate-600 leading-relaxed font-medium">
+            Importancia de las reservas internacionales para la estabilidad macroeconómica del país.
+        </p>
+    </div>
+
+    <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover relative group">
+        <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center mb-8">
+            <i data-lucide="smartphone" class="text-indigo-600 w-8 h-8"></i>
+        </div>
+        <h3 class="text-2xl font-black text-blue-950 mb-4 leading-tight">Pagos Digitales</h3>
+        <p class="text-slate-600 leading-relaxed font-medium">
+            Uso de pagos digitales en mi localidad y su impacto en la economía diaria.
+        </p>
+    </div>
+
+    <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover relative group">
+        <div class="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center mb-8">
+            <i data-lucide="target" class="text-emerald-600 w-8 h-8"></i>
+        </div>
+        <h3 class="text-2xl font-black text-blue-950 mb-4 leading-tight">Metas de Inflación</h3>
+        <p class="text-slate-600 leading-relaxed font-medium">
+            El esquema de metas explícitas de inflación de la política monetaria del BCRP.
+        </p>
+    </div>
+</div>
+	</section>
+
+    <!-- Prizes Section -->
+    <section id="premios" class="py-32 bg-slate-100/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-24">
+                <h2 class="text-4xl md:text-5xl font-black text-blue-950 mb-6 tracking-tight">Premios 2026</h2>
+                <p class="text-slate-500 text-lg font-medium">Valoramos tu talento y el compromiso de tu institución educativa.</p>
             </div>
 
-            <div class="space-y-4">
-                <div class="border border-slate-200 rounded-2xl overflow-hidden faq-item">
-                    <button class="w-full p-6 text-left flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
-                        <span class="font-bold text-blue-950">¿Quiénes pueden participar en el concurso?</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600 transition-transform duration-300 icon-chevron"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="hidden p-6 text-slate-600 border-t border-slate-100 bg-white">
-                        Pueden participar estudiantes de 4to y 5to de secundaria de instituciones educativas públicas y privadas a nivel nacional.
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-end">
+                <!-- 2nd Place -->
+                <div class="bg-white p-10 rounded-[3rem] border border-slate-200 flex flex-col items-center text-center prize-glow-2 transition-transform hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center text-4xl mb-6 shadow-inner">🥈</div>
+                    <span class="text-slate-400 font-black uppercase text-[10px] tracking-[0.3em] mb-3">Segundo Lugar</span>
+                    <h3 class="text-4xl font-black text-blue-950 mb-2">S/ 2,000</h3>
+                    <p class="text-slate-500 font-bold text-sm mb-8">Por cada integrante (3) y docente</p>
+                    <div class="w-full pt-8 border-t border-slate-100 text-blue-900 flex flex-col items-center">
+                        <i data-lucide="laptop" class="w-6 h-6 mb-2"></i>
+                        <span class="text-xs font-black uppercase tracking-wider leading-relaxed">Laptop + Proyector<br>para el Colegio</span>
+                    </div>
+                </div>
+
+                <!-- 1st Place -->
+                <div class="bg-blue-950 p-12 rounded-[3.5rem] flex flex-col items-center text-center transform lg:scale-110 shadow-3xl shadow-blue-900/40 relative prize-glow-1">
+                    <div class="absolute -top-6 bg-yellow-500 text-blue-950 font-black px-8 py-2.5 rounded-full text-sm tracking-widest shadow-xl">EL GRAN PREMIO</div>
+                    <div class="w-24 h-24 bg-blue-900 rounded-full flex items-center justify-center text-5xl mb-8 shadow-2xl">🥇</div>
+                    <span class="text-blue-400 font-black uppercase text-[10px] tracking-[0.3em] mb-3">Primer Lugar</span>
+                    <h3 class="text-5xl font-black text-white mb-2">S/ 3,000</h3>
+                    <p class="text-blue-300 font-bold text-sm mb-10">Por cada integrante (3) y docente</p>
+                    <div class="w-full pt-10 border-t border-blue-900 text-yellow-500 flex flex-col items-center">
+                        <i data-lucide="laptop" class="w-8 h-8 mb-3"></i>
+                        <span class="text-xs font-black uppercase tracking-wider leading-relaxed">Infraestructura Tecnológica<br>Premium para el Colegio</span>
+                    </div>
+                </div>
+
+                <!-- 3rd Place -->
+                <div class="bg-white p-10 rounded-[3rem] border border-slate-200 flex flex-col items-center text-center prize-glow-3 transition-transform hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-orange-50 rounded-full flex items-center justify-center text-4xl mb-6 shadow-inner">🥉</div>
+                    <span class="text-slate-400 font-black uppercase text-[10px] tracking-[0.3em] mb-3">Tercer Lugar</span>
+                    <h3 class="text-4xl font-black text-blue-950 mb-2">S/ 1,500</h3>
+                    <p class="text-slate-500 font-bold text-sm mb-8">Por cada integrante (3) y docente</p>
+                    <div class="w-full pt-8 border-t border-slate-100 text-blue-900 flex flex-col items-center">
+                        <i data-lucide="laptop" class="w-6 h-6 mb-2"></i>
+                        <span class="text-xs font-black uppercase tracking-wider leading-relaxed">Laptop + Proyector<br>para el Colegio</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Participation Logic -->
+    <section id="participar" class="py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row gap-20 items-center">
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-black text-blue-950 mb-10">Guía de Participación</h2>
+                <div class="space-y-10">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-2xl font-black flex-shrink-0 shadow-lg shadow-blue-200 mt-1">1</div>
+                        <div>
+                            <h4 class="font-black text-xl text-blue-950 mb-2 uppercase tracking-tight">Formar el Escuadrón</h4>
+                            <p class="text-slate-600 font-medium leading-relaxed">Equipos de 3 alumnos (4° o 5° grado) y un profesor asesor. Tu director debe validar la inscripción.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-6">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-2xl font-black flex-shrink-0 shadow-lg shadow-blue-200 mt-1">2</div>
+                        <div>
+                            <h4 class="font-black text-xl text-blue-950 mb-2 uppercase tracking-tight">Producción Cinematográfica</h4>
+                            <p class="text-slate-600 font-medium leading-relaxed">Crea un video dinámico de máximo 3 minutos. Usa gráficos, entrevistas o animaciones para explicar tu tema.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-6">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-2xl font-black flex-shrink-0 shadow-lg shadow-blue-200 mt-1">3</div>
+                        <div>
+                            <h4 class="font-black text-xl text-blue-950 mb-2 uppercase tracking-tight">Subida y Registro</h4>
+                            <p class="text-slate-600 font-medium leading-relaxed">Carga tu video (máximo 80MB) a través del portal oficial. Recuerda mantener el anonimato de tu colegio en el video.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[3rem] p-12 border-2 border-white shadow-xl">
+                    <h4 class="font-black text-blue-900 text-2xl mb-8 flex items-center">
+                        <i data-lucide="terminal" class="mr-3 w-8 h-8"></i>
+                        Checklist Técnico
+                    </h4>
+                    <div class="space-y-6">
+                        <div class="flex items-center p-5 bg-white rounded-2xl border border-blue-100 shadow-sm">
+                            <i data-lucide="video" class="w-6 h-6 text-blue-600 mr-4"></i>
+                            <span class="font-bold text-slate-700 uppercase tracking-wide text-xs">Formato: MP4 / Max 3 Minutos</span>
+                        </div>
+                        <div class="flex items-center p-5 bg-white rounded-2xl border border-blue-100 shadow-sm">
+                            <i data-lucide="hard-drive" class="w-6 h-6 text-blue-600 mr-4"></i>
+                            <span class="font-bold text-slate-700 uppercase tracking-wide text-xs">Tamaño máximo de archivo: 80 MB</span>
+                        </div>
+                        <div class="flex items-center p-5 bg-white rounded-2xl border border-blue-100 shadow-sm">
+                            <i data-lucide="shield-alert" class="w-6 h-6 text-red-500 mr-4"></i>
+                            <span class="font-bold text-slate-700 uppercase tracking-wide text-xs">Prohibido mencionar nombre del colegio</span>
+                        </div>
+                        <div class="flex items-center p-5 bg-white rounded-2xl border border-blue-100 shadow-sm">
+                            <i data-lucide="check-square" class="w-6 h-6 text-green-500 mr-4"></i>
+                            <span class="font-bold text-slate-700 uppercase tracking-wide text-xs">Indicar fuentes de información al final</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline 2026 -->
+    <section id="cronograma" class="py-32 bcrp-gradient relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-24 tracking-tight">Timeline 2026</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Step -->
+                <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:bg-white/20 transition-all group">
+                    <span class="block text-yellow-400 font-black text-xs uppercase tracking-[0.3em] mb-4">Etapa 1</span>
+                    <h4 class="text-2xl font-black mb-4">Inscripciones</h4>
+                    <p class="text-blue-100/70 font-bold text-sm leading-relaxed mb-8">Del 1 de Abril al 14 de Agosto del 2026.</p>
+                    <div class="w-12 h-1 bg-white/20 rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <!-- Step -->
+                <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:bg-white/20 transition-all group">
+                    <span class="block text-yellow-400 font-black text-xs uppercase tracking-[0.3em] mb-4">Etapa 2</span>
+                    <h4 class="text-2xl font-black mb-4">Semifinalistas</h4>
+                    <p class="text-blue-100/70 font-bold text-sm leading-relaxed mb-8">Publicación de resultados el 24 de Septiembre.</p>
+                    <div class="w-12 h-1 bg-white/20 rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <!-- Step -->
+                <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:bg-white/20 transition-all group">
+                    <span class="block text-yellow-400 font-black text-xs uppercase tracking-[0.3em] mb-4">Etapa 3</span>
+                    <h4 class="text-2xl font-black mb-4">Finalistas</h4>
+                    <p class="text-blue-100/70 font-bold text-sm leading-relaxed mb-8">Anuncio de los 3 mejores el 22 de Octubre.</p>
+                    <div class="w-12 h-1 bg-white/20 rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <!-- Step -->
+                <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:bg-white/20 transition-all group">
+                    <span class="block text-yellow-400 font-black text-xs uppercase tracking-[0.3em] mb-4">Etapa 4</span>
+                    <h4 class="text-2xl font-black mb-4">Gala Final</h4>
+                    <p class="text-blue-100/70 font-bold text-sm leading-relaxed mb-8">Gran premiación el 26 de Noviembre del 2026.</p>
+                    <div class="w-12 h-1 bg-white/20 rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!--FAQ-->
+	<section id="faq" class="py-32 bg-white">
+	    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+	        <div class="text-center mb-16">
+	            <h2 class="text-4xl font-black text-blue-950 mb-4 tracking-tight">Preguntas Frecuentes</h2>
+	            <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+	        </div>
+	
+	        <div class="space-y-4">
+	            <div class="border border-slate-200 rounded-2xl overflow-hidden">
+	                <button class="w-full p-6 text-left flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
+	                    <span class="font-bold text-blue-950">¿Quiénes pueden participar en el concurso?</span>
+	                    <i data-lucide="chevron-down" class="w-5 h-5 text-blue-600 transition-transform"></i>
+	                </button>
+	                <div class="hidden p-6 text-slate-600 border-t border-slate-100 bg-white">
+	                    Pueden participar estudiantes de 4to y 5to de secundaria de instituciones educativas públicas y privadas a nivel nacional, formando equipos de 3 integrantes liderados por un docente asesor.
+	                </div>
+	            </div>
+	
+	            <div class="border border-slate-200 rounded-2xl overflow-hidden">
+	                <button class="w-full p-6 text-left flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
+	                    <span class="font-bold text-blue-950">¿Puedo mencionar el nombre de mi colegio en el video?</span>
+	                    <i data-lucide="chevron-down" class="w-5 h-5 text-blue-600 transition-transform"></i>
+	                </button>
+	                <div class="hidden p-6 text-slate-600 border-t border-slate-100 bg-white">
+	                    No. Para garantizar la imparcialidad del jurado, está estrictamente prohibido mencionar el nombre del colegio, mostrar el uniforme o insignias dentro del video. El incumplimiento es causal de descalificación.
+	                </div>
+	            </div>
+	
+	            <div class="border border-slate-200 rounded-2xl overflow-hidden">
+	                <button class="w-full p-6 text-left flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 transition-colors" onclick="toggleFaq(this)">
+	                    <span class="font-bold text-blue-950">¿Cuál es la duración máxima del video?</span>
+	                    <i data-lucide="chevron-down" class="w-5 h-5 text-blue-600 transition-transform"></i>
+	                </button>
+	                <div class="hidden p-6 text-slate-600 border-t border-slate-100 bg-white">
+	                    El video debe tener una duración máxima de 3 minutos. Se recomienda que el contenido sea dinámico y creativo para captar la atención del espectador.
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	
+    <!-- Footer -->
+    <footer class="bg-white pt-32 pb-16 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-24 mb-24">
+                <div class="space-y-8">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-blue-900 p-2 rounded-xl">
+                            <i data-lucide="landmark" class="text-white w-6 h-6"></i>
+                        </div>
+                        <span class="font-black text-2xl tracking-tighter text-blue-950">BCRP<span class="text-blue-600">2026</span></span>
+                    </div>
+                    <p class="text-slate-500 font-medium leading-relaxed max-w-xs">
+                        Construyendo cultura económica y financiera desde las aulas.
+                    </p>
+                    <div class="flex space-x-5">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-blue-400 hover:text-white transition-all"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-red-600 hover:text-white transition-all"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-blue-950 font-black uppercase text-[10px] tracking-[0.3em] mb-10">Contáctanos</h5>
+                    <div class="space-y-6">
+                        <a href="mailto:concurso.escolar@bcrp.gob.pe" class="flex items-center space-x-4 text-slate-600 hover:text-blue-600 transition-colors">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            <span class="font-bold text-sm">concurso.escolar@bcrp.gob.pe</span>
+                        </a>
+                        <a href="https://wa.me/51972906965" class="flex items-center space-x-4 text-slate-600 hover:text-emerald-600 transition-colors">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            <span class="font-bold text-sm">WhatsApp: +51 972 906 965</span>
+                        </a>
+                        <div class="flex items-center space-x-4 text-slate-600">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                            <span class="font-bold text-sm">+51 (1) 613-2000</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-blue-950 font-black uppercase text-[10px] tracking-[0.3em] mb-10">Oficina Central</h5>
+                    <div class="flex items-start space-x-4 text-slate-600">
+                        <i data-lucide="map-pin" class="w-5 h-5 mt-1"></i>
+                        <span class="font-bold text-sm leading-relaxed">
+                            Jr. Santa Rosa 441-445,<br>
+                            Cercado de Lima, Perú
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-16 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">© 2026 Banco Central de Reserva del Perú</p>
+                <div class="flex space-x-10 text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">
+                    <a href="#" class="hover:text-blue-600 transition-colors">Descargar Bases</a>
+                    <a href="#" class="hover:text-blue-600 transition-colors">Protección de Datos</a>
+                    <a href="#" class="hover:text-blue-600 transition-colors">Transparencia</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
+
+
+
