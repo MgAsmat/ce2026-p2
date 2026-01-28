@@ -17,32 +17,36 @@
 </head>
 <body class="text-slate-900 antialiased">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 glass border-b border-slate-200/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex items-center space-x-3">
-                    <div class="bg-blue-900 p-2 rounded-xl shadow-inner">
-                        <!-- ICON: Landmark -->
-                        <img src="images/icon-landmark-white.png" alt="BCRP" class="w-6 h-6" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=B'">
-                    </div>
-                    <span class="font-extrabold text-2xl tracking-tighter text-blue-950">Concurso Escolar BCRP <span class="text-blue-600">2026</span></span>
+    <nav class="nav-wrapper">
+    <div class="nav-container">
+        <div class="nav-content">
+            
+            <div class="nav-logo-box">
+                <div class="nav-icon-bg">
+                    <img src="images/icon-landmark-white.png" alt="BCRP" class="w-6 h-6" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=B'">
                 </div>
-                <div class="hidden md:flex space-x-10 font-bold text-sm tracking-wide">
-                    <a href="#temas" class="text-slate-600 hover:text-blue-600 transition-colors uppercase">Temas</a>
-                    <a href="#premios" class="text-slate-600 hover:text-blue-600 transition-colors uppercase">Premios</a>
-                    <a href="#participar" class="text-slate-600 hover:text-blue-600 transition-colors uppercase">Participación</a>
-                    <a href="#cronograma" class="text-slate-600 hover:text-blue-600 transition-colors uppercase">Cronograma</a>
-                    <a href="#" class="text-slate-600 hover:text-blue-600 transition-colors uppercase">Ganadores anteriores</a>
-                    
-                </div>
-                <a href="https://bcrpconcurso.com/" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-blue-200 active:scale-95">
-                    ¡Inscríbete!
-                </a>
+                <span class="nav-title">
+                    Concurso Escolar BCRP <span class="text-blue-600">2026</span>
+                </span>
             </div>
-        </div>
-    </nav>
 
+            <div class="nav-menu">
+                <a href="#temas" class="nav-link">Temas</a>
+                <a href="#premios" class="nav-link">Premios</a>
+                <a href="#participar" class="nav-link">Participación</a>
+                <a href="#cronograma" class="nav-link">Cronograma</a>
+                <a href="#" class="nav-link">Ganadores anteriores</a>
+            </div>
+
+            <a href="https://bcrpconcurso.com/" target="_blank" class="btn-primary">
+                ¡Inscríbete!
+            </a>
+
+        </div>
+    </div>
+</nav>
+
+    
     <!-- Hero Section -->
     <section class="bg-blue-950 relative pt-40 pb-24 lg:pt-56 lg:pb-40 overflow-hidden bcrp-gradient text-white">
         <!-- Animated Background Orbs -->
@@ -530,6 +534,7 @@
 
 </body>
 </html>
+
 
 
 
