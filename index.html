@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIX Concurso Escolar BCRP 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="page-body">
+
+    <!-- Navigation -->
+    <nav class="nav-bar glass">
+        <div class="nav-container">
+            <div class="nav-inner">
+                <div class="nav-logo">
+                    <img src="images/ce-2026-logo.png" alt="BCRP" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=B'">
+                </div>
+                <div class="nav-links">
+                    <a href="#temas" class="nav-link">Temas</a>
+                    <a href="#premios" class="nav-link">Premios</a>
+                    <a href="#participar" class="nav-link">Participación</a>
+                    <a href="#cronograma" class="nav-link">Cronograma</a>
+                    <a href="ganadores.html" class="nav-link">Ganadores anteriores</a>
+                </div>
+                <a href="https://bcrpconcurso.com/" target="_blank" class="btn-register">
+                    ¡Inscríbete!
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bcrp-gradient">
+        <div class="hero-orb hero-orb--top"></div>
+        <div class="hero-orb hero-orb--bottom"></div>
+        <div class="hero-content">
+            <div class="hero-inner">
+                <div class="hero-badge">
+                    <span class="hero-badge__dot"></span>
+                    <span>Inscripciones abiertas</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-title__gradient">Activa tu creatividad</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Representa a tu colegio. Tienes 3 minutos para demostrar tus conocimientos.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://bcrpconcurso.com/" class="btn-hero-primary">
+                        <span>REGISTRAR A MI EQUIPO</span>
+                    </a>
+                </div>
+                <div class="hero-downloads">
+                    <a href="bases-ce2026.pdf" download class="btn-download">
+                        <img src="images/icon-pdf.png" alt="" class="btn-download__icon" onerror="this.src='https://placehold.co/40x40/eab308/white?text=P'">
+                        <span>Bases del Concurso (PDF)</span>
+                    </a>
+                    <a href="afiches-ce2026.pdf" download class="btn-download">
+                        <img src="images/icon-image.png" alt="" class="btn-download__icon" onerror="this.src='https://placehold.co/40x40/3b82f6/white?text=I'">
+                        <span>Descargar Afiches</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <div class="stats-container">
+        <div class="stats-grid">
+            <div class="stat-card glass">
+                <div class="stat-card__icon stat-card__icon--blue">
+                    <img src="images/icon-edu.png" alt="" onerror="this.src='https://placehold.co/64x64/2563eb/white?text=E'">
+                </div>
+                <div>
+                    <p class="stat-card__label">Participantes</p>
+                    <p class="stat-card__value">Estudiantes de 4° y 5° de secundaria</p>
+                </div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-card__icon stat-card__icon--green">
+                    <img src="images/icon-time.png" alt="" onerror="this.src='https://placehold.co/64x64/059669/white?text=T'">
+                </div>
+                <div>
+                    <p class="stat-card__label">Fecha Límite</p>
+                    <p class="stat-card__value">13 de agosto de 2026</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Themes Section -->
+    <section id="temas" class="section section--centered">
+        <div class="section__header">
+            <h2 class="section__title">Temas</h2>
+            <div class="section__divider"></div>
+            <p class="section__subtitle">
+                Tu video debe abordar con claridad y dinamismo alguno de los siguientes temas:
+            </p>
+        </div>
+        <div class="cards-grid cards-grid--3">
+            <div class="card card-hover">
+                <div class="card__image">
+                    <img src="images/bcrp-inflacion.png" alt="" onerror="this.src='https://placehold.co/64x64/2563eb/white?text=1'">
+                </div>
+                <h3 class="card__title">¿Cómo controla el BCRP la inflación?</h3>
+                <p class="card__text">Entendiendo el esquema de metas de inflación.</p>
+            </div>
+            <div class="card card-hover">
+                <div class="card__image">
+                    <img src="images/pagos-digitales.png" alt="" onerror="this.src='https://placehold.co/64x64/2563eb/white?text=2'">
+                </div>
+                <h3 class="card__title">Pagos digitales en mi localidad</h3>
+                <p class="card__text">¿Cómo están cambiando la forma de pagar y ahorrar?</p>
+            </div>
+            <div class="card card-hover">
+                <div class="card__image">
+                    <img src="images/reservas-internacionales.png" alt="" onerror="this.src='https://placehold.co/64x64/2563eb/white?text=3'">
+                </div>
+                <h3 class="card__title">¿Para qué sirven las reservas internacionales netas?</h3>
+                <p class="card__text">¿Cómo contribuyen a la estabilidad económica y financiera del país?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Criteria Section -->
+    <section id="criterios" class="section section--centered">
+        <div class="section__header">
+            <h2 class="section__title">Criterios de evaluación</h2>
+            <div class="section__divider"></div>
+            <p class="section__subtitle">Tu video será evaluado de acuerdo con los siguientes criterios:</p>
+        </div>
+        <div class="cards-grid cards-grid--2">
+            <div class="card card-hover">
+                <div class="card__image card__image--constrained">
+                    <img src="images/dominio-conceptos.png" alt="" onerror="this.src='https://placehold.co/64x64/2563eb/white?text=1'">
+                </div>
+                <h3 class="card__title">Dominio de conceptos</h3>
+                <p class="card__text">Capacidad de comprensión de conceptos y variables económicas relacionados con el tema. Pensamiento crítico y buen manejo de la información utilizada.</p>
+            </div>
+            <div class="card card-hover">
+                <div class="card__image card__image--constrained">
+                    <img src="images/aplicacion-practica.png" alt="" onerror="this.src='https://placehold.co/64x64/2563eb/white?text=2'">
+                </div>
+                <h3 class="card__title">Aplicación práctica</h3>
+                <p class="card__text">Los videos deben recoger las vivencias de los estudiantes, así como reflejar —cuando corresponda— una adecuada comprensión de los fenómenos económicos y de las decisiones y acciones del BCRP.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section id="premios" class="section prizes-section">
+        <div class="section__header">
+            <h2 class="section__title">Premios</h2>
+            <p class="section__subtitle">Valoramos tu talento y el compromiso de tu institución educativa.</p>
+        </div>
+        <div class="prizes-grid">
+            <!-- 2nd Place -->
+            <div class="prize-card prize-glow-2">
+                <div class="prize-card__medal">🥈</div>
+                <span class="prize-card__label">Segundo Lugar</span>
+                <h3 class="prize-card__amount">S/ 2 000</h3>
+                <p class="prize-card__desc">Para cada integrante (3) y docente</p>
+                <div class="prize-card__extra">
+                    <div class="prize-card__icon-wrap">
+                        <img src="images/icon-laptop.png" alt="" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=L'">
+                    </div>
+                    <span class="prize-card__extra-label">Laptop + Proyector<br>para el Colegio</span>
+                </div>
+            </div>
+            <!-- 1st Place -->
+            <div class="prize-card prize-card--featured prize-glow-1">
+                <div class="prize-card__badge">PRIMER LUGAR</div>
+                <div class="prize-card__medal prize-card__medal--gold">🥇</div>
+                <h3 class="prize-card__amount prize-card__amount--featured">S/ 3 000</h3>
+                <p class="prize-card__desc">Para cada integrante (3) y docente</p>
+                <div class="prize-card__extra prize-card__extra--featured">
+                    <div class="prize-card__icon-wrap">
+                        <img src="images/icon-laptop.png" alt="" onerror="this.src='https://placehold.co/48x48/eab308/1e3a8a?text=L'">
+                    </div>
+                    <span class="prize-card__extra-label">Laptop + Proyector<br>para el Colegio</span>
+                </div>
+            </div>
+            <!-- 3rd Place -->
+            <div class="prize-card prize-glow-3">
+                <div class="prize-card__medal prize-card__medal--bronze">🥉</div>
+                <span class="prize-card__label">Tercer Lugar</span>
+                <h3 class="prize-card__amount">S/ 1 500</h3>
+                <p class="prize-card__desc">Para cada integrante (3) y docente</p>
+                <div class="prize-card__extra">
+                    <div class="prize-card__icon-wrap">
+                        <img src="images/icon-laptop.png" alt="" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=L'">
+                    </div>
+                    <span class="prize-card__extra-label">Laptop + Proyector<br>para el Colegio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Participation Guide -->
+    <section id="participar" class="section">
+        <div class="participation-layout">
+            <div class="participation-steps">
+                <h2 class="section__title">Guía de Participación</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step__number">1</div>
+                        <div>
+                            <h4 class="step__title">Forma tu equipo</h4>
+                            <p class="step__text">Equipos de 3 alumnos (4° o 5° grado de secundaria) y un profesor asesor. El director o directora de tu institución debe realizar la inscripción.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">2</div>
+                        <div>
+                            <h4 class="step__title">Regístrate</h4>
+                            <p class="step__text">El director de la institución registrará a los equipos <a href="#"><strong>aquí</strong></a>.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">3</div>
+                        <div>
+                            <h4 class="step__title">Graba tu video</h4>
+                            <p class="step__text">Crea un video dinámico demostrando tus conocimientos en un máximo de 3 minutos. Recuerda que los alumnos son los protagonistas.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">4</div>
+                        <div>
+                            <h4 class="step__title">Sube tu material</h4>
+                            <p class="step__text">Carga tu video (máximo 80 MB) a través del portal oficial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="participation-notes">
+                <div class="notes-box">
+                    <h4 class="notes-box__title">
+                        <img src="images/icon-checklist.png" alt="" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=C'">
+                        A tener en cuenta
+                    </h4>
+                    <div class="notes-list">
+                        <div class="note-item">
+                            <div class="note-item__icon note-item__icon--blue">
+                                <img src="images/icon-video.png" alt="" onerror="this.src='https://placehold.co/48x48/2563eb/white?text=V'">
+                            </div>
+                            <span class="note-item__text">Formato: MP4 (Máximo 3 Minutos)</span>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-item__icon note-item__icon--blue">
+                                <img src="images/icon-disk.png" alt="" onerror="this.src='https://placehold.co/48x48/2563eb/white?text=D'">
+                            </div>
+                            <span class="note-item__text">Tamaño máximo de archivo: 80 MB</span>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-item__icon note-item__icon--green">
+                                <img src="images/icon-verify.png" alt="" onerror="this.src='https://placehold.co/48x48/10b981/white?text=OK'">
+                            </div>
+                            <span class="note-item__text">Indicar fuentes de información al final del video</span>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-item__icon note-item__icon--red">
+                                <img src="images/icon-alert.png" alt="" onerror="this.src='https://placehold.co/48x48/ef4444/white?text=!'">
+                            </div>
+                            <span class="note-item__text note-item__text--red">No está permitido:<br>- Mencionar el nombre del colegio al que pertenecen<br>- Usar imágenes con marcas de agua<br>- Hacer propaganda de marcas comerciales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="cronograma" class="section bcrp-gradient timeline-section">
+        <div class="timeline-container">
+            <h2 class="section__title section__title--white">Cronograma</h2>
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <span class="timeline-card__label">Registro y envío de videos</span>
+                    <h4 class="timeline-card__date">Hasta el 13 de agosto de 2026</h4>
+                    <div class="timeline-card__bar"></div>
+                </div>
+                <div class="timeline-card">
+                    <span class="timeline-card__label">Publicación de semifinalistas</span>
+                    <h4 class="timeline-card__date">23 de setiembre de 2026</h4>
+                    <div class="timeline-card__bar"></div>
+                </div>
+                <div class="timeline-card">
+                    <span class="timeline-card__label">Publicación de finalistas</span>
+                    <h4 class="timeline-card__date">22 de octubre de 2026</h4>
+                    <div class="timeline-card__bar"></div>
+                </div>
+                <div class="timeline-card">
+                    <span class="timeline-card__label">Ceremonia de premiación</span>
+                    <h4 class="timeline-card__date">19 de noviembre de 2026</h4>
+                    <div class="timeline-card__bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq-section">
+        <div class="faq-container">
+            <div class="section__header">
+                <h2 class="section__title">Preguntas Frecuentes</h2>
+                <div class="section__divider"></div>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-item__btn" onclick="toggleFaq(this)">
+                        <span>¿Quiénes pueden participar?</span>
+                        <div class="faq-item__icon-wrap">
+                            <img src="images/icon-chevron.png" alt="" class="faq-item__icon" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=V'">
+                        </div>
+                    </button>
+                    <div class="faq-item__answer hidden">
+                        El Concurso está dirigido a todos los estudiantes y docentes de Educación Básica Regular (EBR) a nivel nacional que se encuentren laborando en una institución educativa pública y/o privada al momento de su postulación.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__btn" onclick="toggleFaq(this)">
+                        <span>¿Pueden participar más de un docente o más de tres estudiantes por equipo?</span>
+                        <div class="faq-item__icon-wrap">
+                            <img src="images/icon-chevron.png" alt="" class="faq-item__icon" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=V'">
+                        </div>
+                    </button>
+                    <div class="faq-item__answer hidden">
+                        Los grupos solo pueden ser conformados por 1 docente y 3 estudiantes, todos pertenecientes a la misma institución educativa.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__btn" onclick="toggleFaq(this)">
+                        <span>¿Cuántos equipos pueden participar por colegio?</span>
+                        <div class="faq-item__icon-wrap">
+                            <img src="images/icon-chevron.png" alt="" class="faq-item__icon" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=V'">
+                        </div>
+                    </button>
+                    <div class="faq-item__answer hidden">
+                        No hay límite de equipos participantes por institución educativa.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__btn" onclick="toggleFaq(this)">
+                        <span>¿Es posible participar en más de un equipo?</span>
+                        <div class="faq-item__icon-wrap">
+                            <img src="images/icon-chevron.png" alt="" class="faq-item__icon" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=V'">
+                        </div>
+                    </button>
+                    <div class="faq-item__answer hidden">
+                        Sí, los estudiantes y docentes pueden participar en distintos equipos dentro de su institución. Asimismo, los docentes pueden participar en equipos de distintas instituciones en las que laboren.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__btn" onclick="toggleFaq(this)">
+                        <span>¿Los alumnos de secciones diferentes pueden formar un equipo?</span>
+                        <div class="faq-item__icon-wrap">
+                            <img src="images/icon-chevron.png" alt="" class="faq-item__icon" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=V'">
+                        </div>
+                    </button>
+                    <div class="faq-item__answer hidden">
+                        Sí, los 3 estudiantes pueden ser de distintas secciones de la misma institución educativa.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__btn" onclick="toggleFaq(this)">
+                        <span>¿El asesor docente puede ser de cualquier curso?</span>
+                        <div class="faq-item__icon-wrap">
+                            <img src="images/icon-chevron.png" alt="" class="faq-item__icon" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=V'">
+                        </div>
+                    </button>
+                    <div class="faq-item__answer hidden">
+                        Sí, el docente puede impartir cualquier curso en su institución educativa.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/ce-2026-logo.png" alt="BCRP" onerror="this.src='https://placehold.co/48x48/1e3a8a/white?text=B'">
+                    <p class="footer-brand__tagline">Construyendo cultura económica y financiera desde las aulas.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/bcrpoficial/" class="social-icon social-icon--fb">
+                            <img src="images/icon-fb.png" alt="Facebook" onerror="this.src='https://placehold.co/32x32/1e3a8a/white?text=f'">
+                        </a>
+                        <a href="https://www.instagram.com/bcrpoficial/" class="social-icon social-icon--ig">
+                            <img src="images/icon-ig.png" alt="Instagram" onerror="this.src='https://placehold.co/32x32/3b82f6/white?text=ig'">
+                        </a>
+                        <a href="https://www.youtube.com/user/bcrpoficial" class="social-icon social-icon--yt">
+                            <img src="images/icon-yt.png" alt="YouTube" onerror="this.src='https://placehold.co/32x32/ef4444/white?text=yt'">
+                        </a>
+                        <a href="https://x.com/bcrpoficial" class="social-icon social-icon--tw">
+                            <img src="images/icon-tw.png" alt="X / Twitter" onerror="this.src='https://placehold.co/32x32/ef4444/white?text=x'">
+                        </a>
+                        <a href="https://www.tiktok.com/@bcrpoficial" class="social-icon social-icon--tk">
+                            <img src="images/icon-tk.png" alt="TikTok" onerror="this.src='https://placehold.co/32x32/ef4444/white?text=tk'">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h5 class="footer-contact__heading">Contáctanos</h5>
+                    <div class="footer-contact__list">
+                        <a href="mailto:concurso.escolar@bcrp.gob.pe" class="contact-item contact-item--email">
+                            <div class="contact-item__icon">
+                                <img src="images/icon-mail.png" alt="" onerror="this.src='https://placehold.co/32x32/2563eb/white?text=@'">
+                            </div>
+                            <span>Email: concurso.escolar@bcrp.gob.pe</span>
+                        </a>
+                        <a href="https://wa.me/51972906965" class="contact-item contact-item--wa">
+                            <div class="contact-item__icon">
+                                <img src="images/icon-wa.png" alt="" onerror="this.src='https://placehold.co/32x32/10b981/white?text=W'">
+                            </div>
+                            <span>WhatsApp: +51 972 906 965</span>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-item__icon">
+                                <img src="images/icon-phone.png" alt="" onerror="this.src='https://placehold.co/32x32/64748b/white?text=P'">
+                            </div>
+                            <span>Teléfono: +51 (1) 613-2000<br>Anexos 25356 y 22649</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__copy">© 2026 Banco Central de Reserva del Perú</p>
+                <div class="footer-bottom__links">
+                    <a href="#" class="footer-bottom__link">Descargar Bases</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
